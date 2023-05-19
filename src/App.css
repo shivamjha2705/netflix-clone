@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+}
+.App{
+  background-color: #111;
+}
+
+/*----scrollBar css-----*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(37, 37, 37);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#111;
+}

@@ -1,0 +1,70 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+.row h2{
+    margin: 20px 0 20px 0;
+}
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.row_posters::-webkit-scrollbar{
+    display: none; /* hide scrollbar but keeps the functionalities as same */
+}
+
+.row_poster{
+    object-fit: cover; /* if value = contains -> keeps aspect ratio for looking nice image size */
+    width: 100%;
+    max-height: 120px;
+    margin-right: 20px;
+    transition: transform 450ms;
+    border-radius: 8px;
+    
+}
+.row_poster:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+.row_posterLarge{
+    max-height: 300px;
+}
+.row_posterLarge:hover{
+    transform: scale(1.09);
+    opacity: 1;
+}
+@media only screen and (max-width: 768px){
+    .row{
+        margin-left: 10px;
+    }
+    .row h2{
+        margin-left: 2px;
+    }
+}
+.swiper::before,
+.swiper::after {
+  z-index: 2;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  width: 994vw;
+  height: 797vw;
+  background: #111;
+  border-radius: 50%;
+}
+.swiper::before {
+  top: -795vw;
+}
+.swiper::after {
+  bottom: -795vw;
+}
+.active{
+    display: block;
+}
+.disable{
+    display: none;
+}
