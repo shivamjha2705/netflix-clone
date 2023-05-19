@@ -1,6 +1,8 @@
 # netflix-clone
-This is a clone webpage of Netflix ott platform in which movie api is used to fetch data such as images , titles , description of movies , etc .
-**These are production build optimised codes and files**
+This is a clone of Netflix OTT Platform in which TMDB movie api key is used to fetch data such as images , titles , descriptions
+Axios, a promise-based HTTP library that requests to fetch data from api , is also used.
+
+**please initailiz node modules to run this project on your system**
 
 ----Web interface----
 
